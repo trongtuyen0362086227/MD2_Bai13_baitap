@@ -16,11 +16,9 @@ public class Main_3 {
 
         // Tìm chuỗi liên tiếp có độ dài lớn nhất
         for (int i = 0; i < string.length(); i++) { 		//1 Vòng lặp
-            if (list.size() > 1 && string.charAt(i) <= list.getLast() &&
-                    list.contains(string.charAt(i))) {
+            if (list.size() > 1 && string.charAt(i) <= list.getLast()) {
                 list.clear(); //1 câu lệnh
             }
-
             list.add(string.charAt(i)); // 1 câu lệnh
 
             if (list.size() > max.size()) { // 1 câu lệnh
